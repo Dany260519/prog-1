@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Literata:wght@600&display=swap" rel="stylesheet">
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta charset="utf-8/">
+        <title>html Editor</title>
+    </head>
+    
+    <body>
+        <header id="header">
+           
+            <nav id="navbar">
+                <ul>
+                    <li class="list"><a class="mark" href="#description">Descripción</a></li>
+                    <li class="list"><a class="mark" href="#future">Propuesta</a></li>
+                    <li class="list"><a class="mark" href="#contacte">Contactar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <h1 id="title" class="heading">¿Qué tan útil soy para ti?</h1>
+            <p id="description" class="text">
+               Ayudanos contestando esta encuesta, para así saber como va el funcionamiento de nuestra página web. Por favor aporte sus sugerencias.
+            </p>
+        </header>
+        
+        <section id="form">
+            <form id="survey-form">
+            <label id="name-label" class="text" for="name"><b>Nombre</b></label>
+            <input id="name" class="inputs" type="text" name="name" placeholder="Nombre" required maxlength="20"><br><br>
+            
+            <label id="email-label" class="text" for="email"><b>Email</b></label>
+            <input id="email" class="inputs" type="email" name="email" placeholder="usuario@gmail.com" required maxlength="30"><br><br>
+            
+            <label id="number-label" class="text" for="number"><b>Edad</b></label> 
+            <input id="number"  class="inputs" type="number" max="65" min="14" name="number" placeholder="14 - 65">
+            
+            <p class="text">
+    <b>Género:</b><br>
+    <input type="radio" name="sex" value="Masculino">Masculino<br>
+
+   <input type="radio" name="sex" value="Femenino">Femenino<br>
+
+   <input type="radio" name="sex" value="Otro">Otro<br>
+            </p>
+            
+            <p class="text">
+   <b>Escoja la opcion mas cercana al motivo por el q decidió usar nuestra web:</b><br>
+   <select id="dropdown"  class="selects">
+       <option value="option1">Quiero aprender nuevas cosas</option>
+        <option value="option2" selected>Superación en mi carrera como programador</option>
+        <option value="option3">Deseo cambiar de empleo</option>
+         <option value="option4">Otro</option>
+       
+   </select>
+            </p>
+            
+            <p class="text">
+    <b>¿Para qué te ha sido útil este sitio?</b><br>
+            <input type="checkbox" value="check1"> Ayuda en la lógica para la resolución de problemas<br>
+            
+            <input type="checkbox" value="check2"> Aprendizaje rápido<br>
+            
+            <input type="checkbox" value="check3"> Búsqueda eficaz<br>
+            
+            <input type="checkbox" value="check4"> Respuesta rápida<br>
+            
+            <input type="checkbox" value="check5"> Ejemplos claros y precisos<br>
+            
+            <input type="checkbox" value="check5"> Entretenimiento<br>
+            
+            <input type="checkbox" value="check7"> Práctica a través de ejercicios<br>
+            
+            <input type="checkbox" value="check8"> Nada
+            </p>
+            
+            <h2 id="future" class="heading">Para futuros proyectos</h2>
+            <p class="text">
+    Aporte ideas para futuras actualizaciones que facilitarán tu trabajo en la página.
+            </p>
+            
+            <p class="text">
+    <b>¿Le gustaría que se hiciera otra actualización de esta página web?</b><br>
+    <input type="radio" name="answer" value="Sí">Sí<br>
+
+   <input type="radio" name="answer" value="No">No<br>
+
+   <input type="radio" name="answer" value="No lo sé">No lo sé<br>
+   
+   <input type="radio" name="answer" value="Deberian eliminarla">Deberían eliminar la página
+            </p>
+            
+            <p class="text">
+    <b>¿Desea que le notifiquemos al ser lanzada dicha actualización?:</b><br>
+    <input type="radio" name="notf" value="Sí">Sí<br>
+
+   <input type="radio" name="notf" value="No">No<br>
+
+   <input type="radio" name="notf" value="Al cargar">Solo al cargar la página<br>
+            </p>
+   
+            <p class="text">
+    <b>¿Por cuál vía le gustaría que le notifiquemos?</b><br>
+            <input type="checkbox" value="vía1"> Mensaje<br>
+            
+            <input type="checkbox" value="vía2"> Llamada<br>
+            
+            <input type="checkbox" value="vía3"> Email<br>
+            </p>
+            
+            <label id="number_cell" class="text" for="cell"><b>Su número de teléfono es:</b></label>
+            <input class="inputs" id="cell" type="text" name="cell"><br><br>
+            
+            <textarea id="coment" class="control" placeholder="Escriba aquí sus sugerencias o comente su experiencia con nuestra página"></textarea>
+                        
+            <p class="text">
+   <b>Deseo que mi comentario:</b><br>
+   <select  class="selects">
+       <option value="publico">Sea público, manteniendome en el anonimato</option>
+        <option value="reconocido" selected>Sea público, incluyendo mi información personal</option>
+        <option value="importa">No se publique pero sea tomado en cuenta</option>
+         <option value="No">Solo sea un comentario sin importancia</option>     
+   </select>
+            </p>
+            
+            <input id="submit" class="control" type="submit" value="Encuesta finalizada">                     
+            </form>
+        </section>
+        
+        <footer id="footer">
+            <p class="text">
+    Gracias por responder esta encuesta. Sus sugerencias serán tomadas en cuenta.
+            </p>
+            <hr>
+            <div id="contacte">
+                <p><a class="contact" target="_blank"  href="mailto:danielavegapena115@gmail.com"><img id="contact" src="https://www.pngarts.com/files/10/Vector-Email-Icon-Download-PNG-Image.png"></a><br>Contactar a creador</p>
+            </div>
+        </footer>    
+    </body>
+</html>

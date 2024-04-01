@@ -1,0 +1,100 @@
+@media screen{
+    body{
+        color:rgb(2,47,96);
+        font-family: 'Bree Serif', serif;
+        margin-top:60px;
+        margin-left: 80px;
+        margin-right: 80px;
+        min-width: 100%;
+ }
+}
+
+.inputs{
+    padding: 5;
+}
+
+#coment{
+    width: 320px;
+    height: 50px;
+    padding: 5;
+    margin: 20px;
+}
+
+.selects{
+    font-size: 15px;
+    font-family: 'Literata', serif;
+    padding: 2;
+}
+
+#submit, #navbar{
+    font-family: 'Literata', serif;
+    color: rgb(250,250,250);
+    background: rgb(2,47,96);
+}
+
+.control, .selects, .inputs {
+    border-radius:20px;
+    text-align: center;
+    border: groove;
+    border-color: rgb(220,210,220);
+    cursor: pointer;
+}
+
+.control{
+    padding: 5;
+    margin: 20px;
+}
+
+#coment, .selects, .inputs{
+    color: rgb(2,47,96);
+    background: rgb(250,250,250);
+}
+
+#contact{
+    width:40px;
+}
+
+.contact{
+    margin:50;
+}
+
+
+#navbar {  
+position: fixed;   
+right: 0;  
+top: 0px;  
+height: 30px;  
+display: flex; 
+align-items: center;  
+box-shadow: 0 0 25px 0 black;
+width: 450px;
+}
+
+#submit:hover, #navbar:hover {
+    background:rgb(2,80,150);
+}
+
+.list{
+ display: inline;  
+ margin:30px;
+ } 
+ 
+ .mark{
+     color:  rgb(250,250,250);
+      text-decoration: none;
+ }
+
+ .mark:hover{
+     color:  rgb(210,210,250);
+ }
+
+ ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+ }
+
+.list:hover {
+    transform: translateY(-2px);
+     transition: all 0.3s;
+}
